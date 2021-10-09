@@ -1,0 +1,28 @@
+.intercomButton {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    padding: 14px;
+    border-radius: 25px;
+    z-index: 50;
+    background: #1C7BF7;
+    background-image: -webkit-linear-gradient(45deg, #61FAED 0%, #1C7BF7 100%);
+    background-image: -o-linear-gradient(45deg, #61FAED 0%, #1C7BF7 100%);
+    background-image: linear-gradient(45deg, #61FAED 0%, #1C7BF7 100%);
+    -webkit-box-shadow: 0 10px 25px 0 rgba(48, 122, 219, 0.39);
+    box-shadow: 0 10px 25px 0 rgba(48, 122, 219, 0.39);
+    line-height: 1;
+    cursor: pointer;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    vertical-align: top;
+    -webkit-transition: .25s;
+    transition: .25s;
+}
+
+#jsUploadArchive .grey {
+    background-color: #C4C4C4 !important;
+}
