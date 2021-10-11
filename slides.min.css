@@ -1656,7 +1656,7 @@ html.mobile .showForMobileInline {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  width: 33.33333%;
+  max-width: 33.33333%;
   white-space: nowrap;
   font-size: 16px;
   height: 50px;
