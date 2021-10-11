@@ -12829,8 +12829,9 @@ button.actionButton.sidebarTrigger svg {
 }
 
 .drpdwn:hover > .dropdown-content {
-  display: block;  
+  display: block; 
+  
   position: absolute;
-  right: 0;
+  left: 0;
   top:100%;
 }
