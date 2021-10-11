@@ -12813,3 +12813,24 @@ button.actionButton.sidebarTrigger svg {
   color: #EB5757;
 }
 
+
+/* The dropdown container */
+.drpdwn {
+  position: relative;
+  display: inline;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.dropdown-content {
+  display: none;
+  z-index: 1;
+
+}
+
+.drpdwn:hover > .dropdown-content {
+  display: block;  
+  position: absolute;
+  right: 0;
+  top:100%;
+}
