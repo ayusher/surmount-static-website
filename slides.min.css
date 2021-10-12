@@ -1503,13 +1503,13 @@ html:not(.mobile) .slide.video .background[style] {
     display: inline !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 965px) {
   .hideForPhablet {
     display: none !important;
   }
 }
 /* tablet portrait and smaller */
-@media (max-width: 768px) {
+@media (max-width: 966px) {
   .showForPhablet {
     display: block !important;
   }
