@@ -1,0 +1,38 @@
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+  padding: 0;
+  margin: 0;
+  }
+  
+  .bgimg {
+    /* Background image */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://raw.githubusercontent.com/ayusher/surmount-static-website/main/surmountpreview.png');
+    background-size: cover;
+    /* Full-screen */
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    /* Center the background image */
+    background-position: center;
+    /* Scale and zoom in the image */
+    background-size: cover;
+    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+    position: relative;
+    /* Add a white text color to all elements inside the .bgimg container */
+    
+    /* Add a font */
+    font-family: "Poppins", Courier, monospace;
+    /* Set the font-size to 25 pixels */
+    font-size: 25px;
+  }
+  
+  /* Position text in the middle */
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+
+  }
