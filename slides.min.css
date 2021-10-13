@@ -1517,6 +1517,14 @@ html:not(.mobile) .slide.video .background[style] {
   .showForPhabletInline {
     display: inline !important;
   }
+
+  .bgimg {
+    padding: 5% !important; 
+    margin: auto !important; 
+    width: 100% !important;
+    max-height: 70vh !important;
+  }
+
 }
 /* phone portrait and smaller */
 @media (max-width: 435px) {
