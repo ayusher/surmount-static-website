@@ -26,3 +26,7 @@
 #jsUploadArchive .grey {
     background-color: #C4C4C4 !important;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
