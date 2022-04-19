@@ -6,7 +6,7 @@ body, html {
   
   .bgimg {
     /* Background image */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://raw.githubusercontent.com/ayusher/surmount-static-website/main/surmountpreview.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/ayusher/surmount-static-website/main/surmountpreview.png');
     background-size: cover;
     /* Full-screen */
     height: 100%;
