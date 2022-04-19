@@ -1,361 +1,551 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WT760J8X4M"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-WT760J8X4M');
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WT760J8X4M"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WT760J8X4M');
 
-</script>
+  </script>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="application-name" content="&nbsp;"/>
-<meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="description" content="Empowering the average investor with hands-free trading">
-<meta name="image" content="https://www.surmount.ai/surmountpreview.png">
-<meta name="author" content="Surmount AI">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surmount AI</title>
 
-<meta property="og:title" content="Surmount AI">
-<meta property="og:description" content="Empowering the average investor with hands-free trading">
-<meta property="og:image" content="https://www.surmount.ai/surmountpreview.png">
+  <meta name="description" content="Empowering the average investor with hands-free trading">
+  <meta name="image" content="https://www.surmount.ai/assets/img/trading.png">
+  <meta name="author" content="Surmount AI">
 
-<meta name="description" content="Empowering everyday investors with accessible algorithmic trading models, account automation, helpful dashboards, and much more!">
-<meta name="keywords" content="surmount, surmount ai, stocks, crypto, forex, fintech, machine learning, account automation">
+  <meta property="og:title" content="Surmount AI">
+  <meta property="og:description" content="Empowering the average investor with hands-free trading">
+  <meta property="og:image" content="https://www.surmount.ai/assets/img/trading.png">
 
-
-<base href="./">
-
-<link href="slides.min.css" rel="stylesheet" type="text/css">
-<link href="custom.css" rel="stylesheet" type="text/css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function() {
-
-var $popupIframe;
-
-$("[data-media]").on("click", function(e) {
-    console.log("WHAT");
-    e.preventDefault();
-    var $this = $(this);
-    var videoUrl = $this.attr("data-media");
-    videoUrl += "?autoplay=1";
-    var popup = $this.attr("href");
-    $popupIframe = $("#iframe");
-
-    $popupIframe.attr("src", videoUrl);
-    console.log($popupIframe);
-    console.log(videoUrl);
-
-    $this.closest(".slide").addClass("show-popup");
-
-});
-
-$(".popup").on("click", function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    //$("#media-popup").html('<iframe width="560" height="315" src="" frameborder="0" allowfullscreen="1"></iframe>');
-    $(".slide").removeClass("show-popup");
-    $popupIframe.attr('src', '');
-});
-
-
-$(".popup > iframe").on("click", function(e) {
-    e.stopPropagation();
-});
-});
-</script>
-
-
-
-<!-- Fonts -->
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="apple-touch-icon-precomposed" href="favicon.png" />
-<link rel="icon" type="image/png" href="favicon.png" />
-<meta name="application-name" content="&nbsp;"/>
-<title>Surmount AI</title>
+  <meta name="description" content="Empowering everyday investors with accessible algorithmic trading models, account automation, helpful dashboards, and much more!">
+  <meta name="keywords" content="surmount, surmount ai, stocks, crypto, forex, fintech, machine learning, account automation">
+  
+  <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body class="slides scroll noPreload whiteSlide">
 
-
-
-<!-- Panel Top #10 -->
-<section class="slide whiteSlide autoHeight">
-<nav class="panel top main-nav padding-top-3 padding-bottom-3 relative" style="background-color: transparent !important;">
-    <div class="sections desktop fix-12-12">
-        <div class="left" style="width: 10%; max-width: 33.3333%">
-            <a href="https://www.surmount.ai/" class="logo weight-8 p largest shift-down-1 vertical-middle"><img src="logoimg.png"> </a>
-            <a href="https://www.surmount.ai/" style="padding-right: 20px" class="logo weight-8 p largest shift-down-1 vertical-middle hideForPhablet"><b style="color: #0d68f6">surmount ai</b></a>
-            <a href="#usecases" class="weight-7 p smallest link uppercase shift-down-3 vertical-middle margin-left-2 hideForPhablet">Use Cases</a>
-            <a href="#features" class="weight-7 p smallest link uppercase shift-down-3 vertical-middle margin-left-2 hideForPhablet">Features</a>
-            <a href="#aboutus" class="weight-7 p smallest link uppercase shift-down-3 vertical-middle margin-left-2 hideForPhablet">About Us</a>
-
-            <div class="weight-7 p smallest uppercase shift-down-3 vertical-middle margin-left-2 hideForPhablet drpdwn">
-                Tools<i class="fa fa-caret-down"></i>
-                <div class="dropdown-content link">
-                    <a target="_blank" href="https://dashboard.surmount.ai/">Stock Dashboard</a>
-                </div>
-            </div>
-        </div> 
-        <div class="right">
-            <a target="_blank" href="https://beta.surmount.ai" class="weight-7 button small pale uppercase blue rounded flat noShadow margin-right-3">OPEN BETA →</a>
+<body class="landing-page">
+  <header class="landing-top-header">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-10 col-lg-3">
+          <div class="logo">
+            <a href="!#">
+              <img src="assets/img/logo.png" alt="" />
+              <span class="mb-2">surmount.ai</span>
+            </a>
+          </div>
         </div>
+        <div class="col-2 d-block d-lg-none text-end">
+          <i class="fas fa-bars toggle-icon"></i>
+        </div>
+        <div class="col-lg-6">
+          <ul class="navbar-custom">
+            <!-- <li>
+              <a href="!#">Use cases</a>
+            </li>
+            <li>
+              <a href="!#">Feature</a>
+            </li>
+            <li>
+              <a href="!#">About</a>
+            </li>
+            <li>
+              <a href="!#">Tools</a>
+            </li> -->
+            <li class="d-lg-none d-block">
+              <div class="nav-btn">
+                <!-- <a href="!#">Login</a> -->
+                <button type="button" class="custom-header-footer" onclick="location.href='https://waitlist.surmount.ai/';">
+                  <img src="assets/img/side-arrow.png" alt="" />
+                  <span class="mb-1">Join the waitlist </span>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 d-none d-lg-block">
+          <div class="nav-btn">
+            <!-- <a href="!#">Login</a> -->
+            <button type="button" class="custom-header-footer" onclick="location.href='https://waitlist.surmount.ai/';">
+              <img src="assets/img/side-arrow.png" alt="" />
+              <span class="mb-1"> Join the waitlist </span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-</nav>
-<div class="popup" id="media-popup">
-    <iframe id="iframe" src="" height="50%" width="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
+  </header>
 
-        <div class="content" style="vertical-align: center;">
-            <div class="container">
-                <div class="wrap left padding-top-0 padding-bottom-0">
-                    <div class="fix-12-12">
-                        <div class="flex fixedSpaces reverse">
-                            <div class="col-7-12 col-tablet-3-5 col-phablet-1-1 padding-top-phablet-0 padding-top-tablet-5 padding-top-10 padding-left-3 padding-right-3 padding-left-tablet-3 padding-right-tablet-3">
-                                <h1 class="boldest largest margin-bottom-3 hover-header bold padding-top-phablet-3" style="line-height: 1.05">The ultimate platform for automated trading</h1>
-                                <p class="fix-5-12 toLeft margin-bottom-4 trim large">Empowering retail investors with automated trading on their existing broker accounts</p>
-                                <div class="fix-12-12 flex verticalCenter">
-                                    <a target="_blank" class="button blue rounded weight-6 cropLeft margin-bottom-phablet-2" href="https://beta.surmount.ai">Join Beta!</a>
-                                                           
-                                </div>
-                            </div>
-                            <div class="col-5-12 col-tablet-2-5 col-phablet-1-1"><img class="bgimg" style="padding: 2.5%; padding-right: 7.5%; margin: auto; margin-left: -20%; max-width: 200%; width:140%; max-height: 70vh" src="graphicsmall.png" alt="" class="block p-phablet-relative" /></div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </section>
+  <section class="landing-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
 
-    <!--- learn what's included -->
-    <section class="padding-top-6 slide whiteSlide autoHeight double-pictures" id="usecases" name="usecases">
-        <div class="content">
-            <div class="container">
-                <div class="wrap "><h3 class="large">Who is Surmount made for?</h3></div>
-            </div>
-        </div>
+          <div class="banner-content">
 
-        <div class="content">
-            <div class="container">
-                <div class="wrap left padding-top-4 padding-bottom-0">
-                    <div class="fix-12-12">
-                        <div class="flex verticalCenter reverse">
-                            <div class="col-4-12 col-tablet-1-1 margin-bottom-tablet-5 padding-left-3 padding-right-3 padding-left-tablet-3 padding-right-tablet-3">
-                                <h2 class="boldest large margin-bottom-2 bold padding-top-tablet-4">Built for anyone and everyone.</h2>
-                                <p class="large margin-bottom-3 trim">Turn your trading ideas into a reality with Surmount AI</p>
-                                <!-- <a target="_blank" href="https://www.surmount.ai/comingsoon/" class="button rounded crop weight-6 blue">Start for Free</a> -->
-                            </div>
-                            <div class="col-8-12 col-tablet-1-1 relative padding-left-3 padding-right-3 padding-left-tablet-3 padding-right-tablet-3">
-                                <ul class="flex later">
-                                    <li class="col-6-12">
-                                        <div class="pad rounded padding-3 margin-bottom-2 align-center">
-                                            <i class="fa fa-users fa-lg"></i>
-                                            <p class="large bold margin-bottom-1">Individual investors</p>
-                                            <p class="small opacity-9 crop letter-spacing-0">Whether you're already a trading wizard or totally new to the space, build and license out strategies or equip strategies on our marketplace to your existing broker account.</p>
-                                        </div>
-                                        <div class="pad rounded padding-3 margin-bottom-2 align-center">
-                                            <i class="fa fa-book fa-lg"></i>
-                                            <p class="large bold margin-bottom-1">Portfolio managers</p>
-                                            <p class="small opacity-9 crop letter-spacing-0">Give your clients control over their portfolio by shopping for community-supported strategies on our platform!</p>
-                                        </div>
-                                    </li>
-                                    <li class="col-6-12">
-                                        <div class="pad rounded padding-3 margin-bottom-2 align-center">
-                                            <i class="fa fa-code fa-lg"></i>
-                                            <p class="large bold margin-bottom-1">Algorithmic traders</p>
-                                            <p class="small opacity-9 crop letter-spacing-0">Already familiar with the process? Easily write scripts to trade a variety of assets. Add strategies to our marketplace to help others profit while earning a commision! Your code always remains closed-source. </p>
-                                        </div>
-                                        <div class="pad rounded padding-3 margin-bottom-2 align-center">
-                                            <i class="fa fa-money fa-lg"></i>
-                                            <p class="large bold margin-bottom-1">Prop trading firms</p>
-                                            <p class="small opacity-9 crop letter-spacing-0">We're always on the lookout for ways to generate alpha and provide a competitive advantage. Join our platform to equip user-created strategies and contribute some of your own strategies for extra income!</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap&text=static-form" rel="stylesheet">
-
-
-    <section class="padding-top-6 slide whiteSlide autoHeight double-pictures" id="features" name="features">
-        <div class="content">
-            <div class="container">
-                <div class="wrap "><h3 class="large">Learn, build, and deploy</h3></div>
-            </div>
-        </div>
-
-        <div class="content">
-            <div class="container">
-                <div class="wrap left padding-top-4 padding-bottom-0">
-                    <div class="fix-12-12">
-                        <div class="flex verticalCenter">
-                            <div class="padding-top-3 col-6-12 col-tablet-1-1 margin-bottom-tablet-5 padding-left-3 padding-right-3 padding-left-tablet-3 padding-right-tablet-3">
-                                <img style="border-radius: 1rem" alt="Neural network graphic" src="nn-dashboard.png">
-                            </div>
-                            <div class="padding-top-3 col-6-12 col-tablet-1-1 relative padding-left-3 padding-right-3 padding-left-tablet-3 padding-right-tablet-3">
-                                <p> <h4>Market Data</h4>
-                                    Get unique and insightful data from our ever-innovating data dashboard. We offer everything from real-time darkpool asset movement tracking to live arbitrage opportunities.
-                                </p>
-                            </div>
-                            <br><br><br>
-                            <div class="padding-top-3 col-6-12 col-tablet-1-1 relative padding-left-3 padding-right-3 padding-left-tablet-3 padding-right-tablet-3">
-                                <p><h4>Portfolio Automation</h4>
-                                    Make trading hands-free by automating a portion of your existing portfolio with thoroughly backtested strategies from our marketplace.
-                                </p>
-                            </div>
-                            <div class="padding-top-3 col-6-12 col-tablet-1-1 margin-bottom-tablet-5 padding-left-3 padding-right-3 padding-left-tablet-3 padding-right-tablet-3">
-                                <img style="border-radius: 1rem" alt="Neural network graphic" src="examplestrat.png">
-                            </div>
-                            <br><br><br>
-                            <div class="padding-top-3 col-6-12 col-tablet-1-1 margin-bottom-tablet-5 padding-left-3 padding-right-3 padding-left-tablet-3 padding-right-tablet-3">
-                                <img style="border-radius: 1rem" alt="Neural network graphic" src="IDE.png">
-                            </div>
-                            <div class="padding-top-3 col-6-12 col-tablet-1-1 relative padding-left-3 padding-right-3 padding-left-tablet-3 padding-right-tablet-3">
-                                <p><h4>Model Creation</h4>
-                                    Write, backtest, refine, and deploy trading models in our custom Python container!
-                                </p>
-                            </div>
-                            <br><br><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-
-<!--- learn what's included -->
-<section class="padding-top-6 slide whiteSlide autoHeight double-pictures" id="aboutus" name="aboutus">
-    <div class="content">
-        <div class="container">
-            <div class="wrap"><h3 class="large">About us</h3></div>
-        </div>
-    </div>
-    
-    <div class="content">
-        <div class="container">
-            <div class="wrap left padding-top-1 padding-bottom-0  padding-left-3 padding-right-3 padding-left-tablet-3 padding-right-tablet-3">
-                <div class="fix-12-12">
-                    <div class="flex verticalCenter">
-                        <ul class="flex later">
-                            <li class="col-3-12">
-                                <div class="pad rounded padding-3 margin-bottom-2 align-center" style="box-shadow: none;">
-                                    
-                                    <img style="border-radius: 50%;" src="logan.png" alt="Logan Weaver">
-                                    <p class="large bold margin-bottom-1">Logan Weaver</p>
-                                    <p class="small opacity-9 crop letter-spacing-0">Co-founder and CEO</p>
-                                </div>
-                            </li>
-                            <li class="col-3-12">
-                                <div class="pad rounded padding-3 margin-bottom-2 align-center" style="box-shadow: none;">
-                                    
-                                    <img style="border-radius: 50%;" src="ayush.png" alt="Ayush Rautwar">
-                                    <p class="large bold margin-bottom-1">Ayush Rautwar</p>
-                                    <p class="small opacity-9 crop letter-spacing-0">Co-founder and CTO</p>
-                                </div>
-                            </li>
-                            <li class="col-3-12">
-                                <div class="pad rounded padding-3 margin-bottom-2 align-center" style="box-shadow: none;">
-                                    
-                                    <img style="border-radius: 50%;" src="peter.png" alt="Peter Caspari">
-                                    <p class="large bold margin-bottom-1">Peter Caspari</p>
-                                    <p class="small opacity-9 crop letter-spacing-0">CIO</p>
-                                </div>
-                            </li>
-                            <li class="col-3-12">
-                                <div class="pad rounded padding-3 margin-bottom-2 align-center" style="box-shadow: none;">
-                                    
-                                    <img style="border-radius: 50%;" src="robert.png" alt="Robert Eisenlohr">
-                                    <p class="large bold margin-bottom-1">Robert Eisenlohr</p>                                            </p>
-                                    <p class="small opacity-9 crop letter-spacing-0">Quantitative Analyst</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <h3 class="smaller" style="text-align: center;">Strategic advisors</h3>
-                <div class="fix-12-12">
-                    <div class="flex verticalCenter">
-                        <ul class="flex later" style="justify-content: center; margin: 0; width: 100%">
-                            <li class="col-3-12">
-                            </li>
-                            <li class="col-3-12">
-                                <div class="pad rounded padding-3 margin-bottom-2 align-center" style="box-shadow: none;">
-                                    <img style="border-radius: 50%;" src="eric.jpg" alt="Eric Hadley">
-                                    <p class="large bold margin-bottom-1">Eric Hadley</p>                                            </p>
-                                    <p class="small opacity-9 crop letter-spacing-0">Microsoft, Pintrest, Mission</p>
-                                </div>
-                            </li>
-                            <li class="col-3-12">
-                                <div class="pad rounded padding-3 margin-bottom-2 align-center" style="box-shadow: none;">
-                                    
-                                    <img style="border-radius: 50%;" src="james.jpg" alt="James Barry">
-                                    <p class="large bold margin-bottom-1">James Barry</p>
-                                    <p class="small opacity-9 crop letter-spacing-0">CBS, Chestnut Hill College, Constitution Center</p>
-                                </div>
-                            </li>
-                            <li class="col-3-12">
-                            </li>
-                            
-                        </ul>
-
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="padding-top-6 slide whiteSlide autoHeight double-pictures">
-    <div class="content">
-        <div class="container">
-            <div class="wrap "><h3 class="smaller">Check out our blog <u><a target="_blank" href="https://surmountai.medium.com/">here</a></u> and follow us on our social media below!</h3></div>
-        </div>
-    </div>
-</section>
-
-<div id="error-message"></div>
-
-<nav class="panel bottom relative padding-top-2 padding-bottom-2">
-    <div class="sections desktop fix-12-12">
-        <div class="left blockForPhablet">
-            <p class="relative weight-5 small cropBottom">
-                Copyright 2021 Surmount AI
+            <h1>
+              Automated investing for
+              <span
+              class="txt-rotate primary-color position-relative typewrite"
+              data-period="600"
+              data-rotate='[ "Any Asset Class",  "Any Broker" , "Any Account Size " ]'>
+              </span>    
+              <!-- <span class="primary-color position-relative typewrite" data-period="300"
+                data-type='[ "Any Asset Class",  "Any Broker" , "Any Account Size " ]'>
+                <span class="wrap"></span>
+              </span> -->
+            </h1>
+            <img src="assets/img/lp-img.png" class="robot-img" alt="" />
+            <p>
+              Spend <span class="primary-color position-relative typewrite"> more time growing your investments and less
+                time managing
+                them </span> using <span style="font-style: italic;" >AI-generated & managed portfolios,
+              algorithmic trading strategies, and copy trading. </span>
             </p>
+            <div class="buttons">
+              <!-- <button type="button" class="learn-how">
+                  <img src="assets/img/learn-how.png" alt="" />
+                  <span class="mb-1">Learn how</span>
+                </button> -->
+              <button type="button" class="trading-hand" onclick="location.href='https://waitlist.surmount.ai/';">
+                <img src="assets/img/side-arrow.png" alt="" />
+                <span class="mb-1">Join the waitlist</span>
+              </button>
+            </div>
+          </div>
         </div>
-        <div style="height: auto" class="center blockForPhablet">
-            <img alt="Surmount AI" src="logo.png" style="height: 100px;">
-            <br>
-            <a target="_blank" style="color: #3e87f8; padding-left:10px; padding-right: 10px" href="https://www.linkedin.com/company/surmountai" class="fa fa-linkedin fa-lg"></a>
-            <a target="_blank" style="color: #3e87f8; padding-left:10px; padding-right: 10px" href="https://twitter.com/Surmountai" class="fa fa-twitter fa-lg"></a>
-            <a target="_blank" style="color: #3e87f8; padding-left:10px; padding-right: 10px" href="https://www.instagram.com/surmount.ai" class="fa fa-instagram fa-lg"></a>
-            <a target="_blank" style="color: #3e87f8; padding-left:10px; padding-right: 10px" href="https://surmountai.medium.com/" class="fa fa-medium fa-lg"></a>
-            <a target="_blank" style="color: #3e87f8; padding-left:10px; padding-right: 10px" href="https://www.tradingview.com/u/SurmountFinance/" class="fa fa-line-chart fa-lg"></a>
-            <br>
-            <br>
-        </div>
-        <div class="right blockForPhablet">
-            <a target="_blank" class="weight-6 p smallest uppercase link" href="https://beta.surmount.ai/">Sign up</a>
-        </div>
+      </div>
     </div>
-</nav>
+  </section>
+
+  <!-- <section class="chart-images-section">
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="images-container d-sm-flex">
+              <div class="image image-1">
+                <img src="assets/img/image-1.png" class="image-1" alt="" />
+              </div>
+              <div
+                class="image-multi position-relative text-center text-sm-start flex-grow-1 ms-sm-3 ms-md-4 mt-2 mt-sm-0"
+              >
+                <div class="image image-2 mb-sm-5 mb-2">
+                  <img src="assets/img/image-2.png" class="" alt="" />
+                </div>
+                <div class="image image-3 ps-sm-5 mb-2 mb-sm-0">
+                  <img src="assets/img/image-4.png" class="" alt="" />
+                </div>
+                <div class="image image-positioning">
+                  <img src="assets/img/image-3.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+  <section class="teck-star-section pt-120">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-10 col-xxl-9 mx-auto">
+          <header class="techstar-bar" >
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-3 text-center " style="align-self: center">
+                  <img class="" src="assets/img/tech-star-logo.png" alt="" />
+                </div>
+                <div class="col-md-2 text-center">
+                  <img class="" src="assets/img/world-lg.png" alt="" />
+                </div>
+                <div class="col-md-2 text-center">
+                  <img class="" src="assets/img/mc-logo.png" alt="" />
+                </div>
+                <div class="col-md-5 text-center" style="align-self: center">
+                  <h2>proudly represented</h2>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="col-xl-10 col-xxl-9 mx-auto text-center Clear benefits-container">
+          <h2 class="general-heading">Clear benefits</h2>
+          <p class="general-text">
+            Easily access automated investing in just a couple of clicks.
+          </p>
+        </div>
+        <div class="col-xl-10 col-xxl-9 mx-auto text-center">
+          <div class="row justify-content-center">
+            <div class="col-sm-4 col-lg-auto mb-3">
+              <div class="benefit-card">
+                <img src="assets/img/ai.png" alt="" />
+                <h4>AI created & managed portfolio</h4>
+                <p>Navigate everchanging markets with ease</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-lg-auto mb-3">
+              <div class="benefit-card">
+                <img src="assets/img/bot.png" alt="" />
+                <h4>Build a bot</h4>
+                <p>
+                  Create automated strategies based around your own hypotheses
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-lg-auto mb-3">
+              <div class="benefit-card">
+                <img src="assets/img/data.png" alt="" />
+                <h4>Visual data</h4>
+                <p>Get a complete and interpretable picture of the market</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-lg-auto mb-3">
+              <div class="benefit-card">
+                <img src="assets/img/market.png" alt="" />
+                <h4>Quant marketplace</h4>
+                <p>
+                  Exchange ideas with other creators and equip successful
+                  strategies
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-lg-auto mb-3">
+              <div class="benefit-card">
+                <img src="assets/img/test.png" alt="" />
+                <h4>Backtest a strategy</h4>
+                <p>Test your strategies on high-quality historical data</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-10 col-xxl-9 mx-auto pt-120">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <div class="d-flex">
+                <ul class="counter-slide">
+                  <li class="active">01</li>
+                  <li>02</li>
+                  <li>03</li>
+                  <li>04</li>
+                </ul>
+                <div class="counter-content ms-3 ms-lg-4">
+                  <h6 class="mb-0">Beat the market</h6>
+                  <h2 class="general-heading mt-xxl-2 mt-2 mb-4 pe-xxl-5 pe-lg-3 pe-sm-5 pe-0 me-xxl-3">
+                    Beating the Market is hard.
+                  </h2>
+                  <p class="mb-0 pe-5 me-xxl-3">
+                    Let
+                    <span class="primary-color">machine learning bots, rule-based bots</span>, and <span
+                      class="primary-color"> copy trading</span> do
+                    it for you
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 d-md-block">
+              <div class="chart-img">
+                <img src="assets/img/beating-img.png" class="img-fluid w-100" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-10 col-xxl-9 mx-auto pt-120">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <div class="d-flex">
+                <ul class="counter-slide">
+                  <li>01</li>
+                  <li class="active">02</li>
+                  <li>03</li>
+                  <li>04</li>
+                </ul>
+                <div class="counter-content counter-content-2 ms-3 ms-lg-4">
+                  <h6 class="mb-0">no code</h6>
+                  <h2 class="general-heading mt-xxl-2 mt-2 mb-4 pe-sm-5 pe-0 pe-lg-0">
+                    Create automated trading bots -
+                    <span class="purple-gradient">no code.</span>
+                  </h2>
+                  <p class="mb-0 pe-sm-5 me-xxl-3 pe-0">
+                    Build, test, and deploy strategies in zero code, low code
+                    and full code environments.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 d-md-block">
+              <!-- no-code-img -->
+              <div class="chart-img position-relative">
+                <img src="assets/img/trading.png" class="img-fluid w-100" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-10 col-xxl-9 mx-auto pt-120 mt-5">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <div class="d-flex">
+                <ul class="counter-slide">
+                  <li>01</li>
+                  <li>02</li>
+                  <li class="active">03</li>
+                  <li>04</li>
+                </ul>
+                <div class="counter-content counter-content-2 ms-3 ms-lg-4">
+                  <h6 class="mb-0">take control</h6>
+                  <h2 class="general-heading mt-xxl-2 mt-2 mb-4">
+                    Trade with full
+                    <span class="purple-gradient">control</span> and
+                    <span class="purple-gradient">confidence</span>
+                  </h2>
+                  <p class="mb-0 pe-sm-5 me-xxl-3">
+                    Spend more time growing your portfolio and less time
+                    managing it.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 d-md-block">
+              <div class="chart-img trade-img">
+                <img src="assets/img/key-statics.png" class="d-flex mb-3" alt="" />
+                <img src="assets/img/historical-alllocation.png" class="d-flex ms-auto" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-10 col-xxl-9 mx-auto pt-120 mt-5">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="d-flex">
+                <ul class="counter-slide">
+                  <li>01</li>
+                  <li>02</li>
+                  <li>03</li>
+                  <li class="active">04</li>
+                </ul>
+                <div class="counter-content ms-3 ms-lg-4">
+                  <h6 class="mb-0">take control</h6>
+                  <h2 class="general-heading mt-xxl-2 mt-2 mb-4">
+                    Link your existing portfolio, create an account, or paper
+                    trade
+                  </h2>
+                  <p class="mb-0">
+                    Easily access automated investing in just a couple of
+                    clicks.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-md-block">
+              <div class="chart-img">
+                <img src="assets/img/link-account.png" class="img-fluid w-100" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-xl-10 col-xxl-9 mx-auto pt-120 mt-5 pb-120">
+            <header class="techstar-bar">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-md-7 text-center text-md-start mb-3 mb-md-0">
+                    <h2 class="mb-0 lh-1">
+                      Sign up to our newsletter to receive our progress updates
+                    </h2>
+                  </div>
+                  <div class="col-md-5">
+                    <div
+                      class="subscribe-form justify-content-center justify-content-md-end mx-auto ms-md-auto"
+                    >
+                      <input type="text" placeholder="Email here..." />
+                      <button type="button">
+                        <i class="fas fa-location-arrow"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+          </div> -->
+        <div class="col-xl-10 col-xxl-9 mx-auto pb-120 pt-120 mt-5">
+          <header class="automatic-trading techstar-bar">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
+                  <h2 class="mb-0 text-white">
+                    Automated trading finally available for individual
+                    investors
+                  </h2>
+                </div>
+                <div class="col-md-4">
+                  <button type="button" class="learn-how mx-auto me-md-0 ms-md-auto" onclick="location.href='https://waitlist.surmount.ai/';">
+                    <img src="assets/img/side-arrow.png" alt="" />
+                    <span class="mb-1">Get Started</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="pt-5">
+    <div class="container mt-4 mb-5">
+      <div class="row">
+        <div class="col-lg-5 col-md-6 footer-content">
+          <div class="logo">
+            <a href="#">
+              <img src="assets/img/logo.png" alt="" />
+              <span class="mb-2 text-white">surmount.ai</span>
+            </a>
+          </div>
+          <p class="footer-desp mb-0 mt-3">
+            Spend more time growing your portfolio and less time managing it.
+          </p>
+          <div class="buttons d-sm-flex d-block justify-content-start">
+            <button type="button" class="trading-hand mb-3 mb-sm-0" onclick="location.href='https://waitlist.surmount.ai/';">
+              <img src="assets/img/side-arrow.png" alt="" />
+              <span class="mb-1"> Join the waitlist </span>
+            </button>
+            <button type="button" class="learn-how">
+              <img src="assets/img/side-arrow.png" alt="" />
+              <span class="mb-1">Learn how</span>
+            </button>
+          </div>
+          <p class="sign-up-text mb-3">
+            Sign up to our newsletter and be first to know.
+          </p>
+          <div class="subscribe-form">
+            <input type="text" placeholder="Email here..." />
+            <button type="button">
+              <i class="fas fa-location-arrow"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-7 align-self-end mt-5 mt-md-0">
+          <ul class="links-container">
+            <li>
+              <h5 class="title mb-3 mb-lg-3">Product</h5>
+              <a href="!#" class="mb-2 mb-lg-3">Integrations</a>
+              <a href="!#" class="mb-2 mb-lg-3">Features</a>
+              <a href="!#" class="mb-2 mb-lg-3">Solutions</a>
+            </li>
+            <li>
+              <h5 class="title mb-3 mb-lg-3">Pricing</h5>
+              <a href="!#" class="mb-2 mb-lg-3">Plans</a>
+               
+            </li>
+            <li class="mt-3 mt-lg-0">
+              <h5 class="title mb-3 mb-lg-3">Company</h5>
+              <a href="!#" class="mb-2 mb-lg-3">About Us</a>
+              <a href="!#" class="mb-2 mb-lg-3">News</a>
+              <a href="!#" class="mb-2 mb-lg-3">Blog</a>
+            </li>
+          </ul>
+          <div class="socail-icon pt-5 pt-lg-3 mt-lg-5">
+            <a href="https://mobile.twitter.com/surmountai" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/Surmountai/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/surmount.ai/" target="_blank"><i class="fab fa-instagram" ></i></a>
+            <a href="https://www.linkedin.com/company/surmountai/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container border-top copyright-container px-0 py-3">
+      <div class="row g-0">
+        <div class="col-md-6 mb-3 mb-md-0 text-center text-md-start">
+          <p class="text mb-0">© 2022 Surmount. All right reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end text-center">
+          <p class="mb-0">
+            <a href="!#" class="text ms-3">GDPR</a><a href="!#" class="text ms-3">Privacy & Security</a><a href="!#"
+              class="text ms-3">EULA</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    $('.toggle-icon').click(function ()
+    {
+      $('.navbar-custom').toggleClass('active');
+    })
+    AOS.init();
+
+
+    var TxtRotate = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
+  
+  TxtRotate.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+  
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+  
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  
+    var that = this;
+    var delta = 100;
+  
+    if (this.isDeleting) { delta /= 2; }
+  
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+  
+    setTimeout(function() {
+      that.tick();
+    }, delta);
+  };
+  
+  window.onload = function() {
+    // load();
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-rotate');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    // var css = document.createElement("style");
+    // css.type = "text/css";
+    // css.innerHTML = ".txt-rotate > .wrap { border-right: 0.03em solid #666 }";
+    // document.body.appendChild(css);
+  };
+  </script>
 </body>
+
 </html>
